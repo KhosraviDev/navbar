@@ -1,3 +1,5 @@
+/* Setting the styles of main element */
+
 main {
   max-width: 28rem;
   display: flex;
@@ -7,6 +9,18 @@ main {
   gap: 2rem;
   position: relative;
 }
+
+/* Setting the styles of micro grid overlay element */
+
+.micro-grid-overlay {
+  position: absolute;
+  inset: 0;
+  opacity: 0.04;
+  background-image: radial-gradient(rgb(255, 255, 255) 1.5px, transparent 1.5px);
+  background-size: 36px 36px;
+}
+
+/* Setting Shadows Styles */
 
 .ambient-glow {
   border-radius: 50%;
@@ -39,6 +53,8 @@ main {
   height: 380px;
   filter: blur(150px);
 }
+
+/* Setting app component main part styles */
 
 .brand {
   display: inline-flex;
@@ -88,17 +104,27 @@ p {
   color: #94a3b8;
 }
 
+/* Setting MediaQuery */
+
 @media screen and (max-width: 425px) {
+  .micro-grid-overlay {
+    opacity: 0.03;
+    background-image: radial-gradient(rgb(255, 255, 255) 1.1px, transparent 1.1px);
+  }
+
   h1 {
     font-size: 3.5rem;
   }
+
   p {
     font-size: 0.8rem;
   }
+
   .brand-dot {
     width: 6px;
     height: 6px;
   }
+
   .brand-name {
     font-size: 10px;
   }

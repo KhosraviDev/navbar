@@ -1,3 +1,5 @@
+/* Declaring font-faces */
+
 @font-face {
   font-family: 'Kalameh-Black';
   src: url('../public/font/KALAMEH-BLACK.TTF');
@@ -7,10 +9,14 @@
   src: url('../public/font/KALAMEH-BOLD.TTF');
 }
 
+/* Styling html element */
+
 html {
   box-sizing: border-box;
   overflow: hidden;
 }
+
+/* Styling all the elements */
 
 *,
 *::after,
@@ -21,6 +27,8 @@ html {
   -webkit-tap-highlight-color: transparent;
 }
 
+/* Styling body element */
+
 body {
   height: 100dvh;
   position: relative;
@@ -29,19 +37,4 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.micro-grid-overlay {
-  position: absolute;
-  inset: 0;
-  opacity: 0.04;
-  background-image: radial-gradient(rgb(255, 255, 255) 1.5px, transparent 1.5px);
-  background-size: 36px 36px;
-}
-
-@media screen and (max-width: 520px) {
-  .micro-grid-overlay {
-    opacity: 0.03;
-    background-image: radial-gradient(rgb(255, 255, 255) 1.1px, transparent 1.1px);
-  }
 }

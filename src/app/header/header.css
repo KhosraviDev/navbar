@@ -1,3 +1,5 @@
+/* Setting all the styles of Header Element  */
+
 header {
   position: absolute;
   top: 0;
@@ -98,6 +100,8 @@ header {
   animation: pulse 2s infinite;
 }
 
+/* Setting styles of the elements that will show in 'max-width: 520px' */
+
 .info {
   display: none;
   padding: 0.3rem 0.4rem;
@@ -127,7 +131,8 @@ header {
   border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-.version-part {
+.version-part,
+.framework-part {
   display: flex;
   align-items: center;
   gap: 0.4rem;
@@ -144,19 +149,23 @@ header {
 }
 
 #version-word,
-#language-word {
+#language-word,
+#framework-word {
   font-family: 'Kalameh-Bold';
 }
 
 #version-name,
-#language-name {
+#language-name,
+#framework-name {
   font-family: 'JetBrains Mono', monospace;
-  padding: 0.1rem 0.5rem;
+  padding: 0 0.5rem;
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 999px;
   background-color: #06030c;
   font-size: 11px;
 }
+
+/* Setting an animation for dot pulse */
 
 @keyframes pulse {
   0%,
@@ -167,6 +176,8 @@ header {
     opacity: 0.3;
   }
 }
+
+/* Settting MediaQuery */
 
 @media screen and (max-width: 520px) {
   header {

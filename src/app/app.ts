@@ -10,6 +10,7 @@ import { Header } from './header/header';
   styleUrl: './app.css'
 })
 export class App {
+  // Defining navItems Array & Initializing it
   navItems = [
     {
       id: 1,
@@ -53,9 +54,12 @@ export class App {
     }
   ]
 
+  // Defining 'selectedNavItem' property
   selectedNavItem?: NavItems = this.navItems[0]
 
+  // Defining onSelect Method for 'select' event
   onSelect(id: number) {
+    // Initialization 'selectedNavItem'
     this.selectedNavItem = this.navItems.find((navItem) => navItem.id === id)
   }
 }

@@ -1,9 +1,12 @@
 <!-- header component -->
 <app-header [selectedNavItem]="selectedNavItem"/>
+
 <!-- Background Image -->
 <div class="micro-grid-overlay"></div>
+
 <!-- main contents -->
 <main>
+
   <!-- shadows -->
   <div
     class="ambient-glow ambient-glow-primary"
@@ -28,6 +31,7 @@
       backgroundImage: `radial-gradient(circle, rgba(${selectedNavItem?.colorRGB}, 0.1) 0%, transparent 80%)`,
     }"
   ></div>
+
   <!-- brand part -->
   <div class="brand">
     <span
@@ -39,11 +43,14 @@
     ></span>
     <span class="brand-name">KHOSRAVI.DEV</span>
   </div>
+
   <!-- name part -->
   <div class="name-part">
     <h1>{{ selectedNavItem?.name }}</h1>
     <p>{{ selectedNavItem?.description }}</p>
   </div>
+
   <!-- navbar component -->
   <app-navbar [navItems]="navItems" (select)="onSelect($event)"/>
+  
 </main>

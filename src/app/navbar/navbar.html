@@ -1,11 +1,7 @@
+<!-- Navbar Element -->
 <nav>
-  <div
-    class="dock-ambient-glow"
-    [style]="{
-      backgroundColor: selectedNavItem()?.color,
-      boxshadow: `0 0 50px 20px rgba(${selectedNavItem()?.colorRGB}, 0.3)`,
-    }"
-  ></div>
+
+  <!-- Using for loop for creating button elements from the Array -->
   @for (navItem of navItems(); track navItem.id) {
     <button
       [class]="navItem.className"
@@ -16,6 +12,17 @@
       {{ navItem.name }}
     </button>
   }
+
+  <!-- Navbar Shadow Element -->
+  <div
+    class="dock-ambient-glow"
+    [style]="{
+      backgroundColor: selectedNavItem()?.color,
+      boxshadow: `0 0 50px 20px rgba(${selectedNavItem()?.colorRGB}, 0.3)`,
+    }"
+  ></div>
+
+<!-- Floating liquid element -->
   <div
     class="dock-active-pill"
     [style]="{
@@ -25,4 +32,5 @@
   >
     <div class="glow-radial-core" [style.background]="selectedNavItem()?.color"></div>
   </div>
+
 </nav>

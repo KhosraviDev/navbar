@@ -1,3 +1,5 @@
+/* Setting navbar styles */
+
 nav {
   position: relative;
   z-index: 10;
@@ -12,6 +14,8 @@ nav {
     inset 0 1px 1px 0 rgba(255, 255, 255, 0.12),
     inset 0 -1px 2px 0 rgba(0, 0, 0, 0.6);
 }
+
+/* Setting navbar's buttons styles */
 
 button {
   position: relative;
@@ -39,6 +43,8 @@ button:hover {
   color: white;
 }
 
+/* Setting under navbar shadow styles*/
+
 .dock-ambient-glow {
   position: absolute;
   bottom: -18px;
@@ -54,9 +60,13 @@ button:hover {
   z-index: 1;
 }
 
+/* Setting styles for active element */
+
 .active {
   color: white;
 }
+
+/* Setting styles for floating liquid element */
 
 .dock-active-pill {
   position: absolute;
@@ -83,6 +93,8 @@ button:hover {
   opacity: 0.65;
   transition: all 0.3s ease;
 }
+
+/* Setting MediaQuery */
 
 @media screen and (max-width: 520px) {
   button {
