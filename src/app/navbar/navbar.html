@@ -1,0 +1,28 @@
+<nav>
+  <div
+    class="dock-ambient-glow"
+    [style]="{
+      backgroundColor: selectedNavItem()?.color,
+      boxshadow: `0 0 50px 20px rgba(${selectedNavItem()?.colorRGB}, 0.3)`,
+    }"
+  ></div>
+  @for (navItem of navItems(); track navItem.id) {
+    <button
+      [class]="navItem.className"
+      [class.active]="selectedNavItem()?.id === navItem.id"
+      (click)="onClick(navItem.id)"
+      #navItem
+    >
+      {{ navItem.name }}
+    </button>
+  }
+  <div
+    class="dock-active-pill"
+    [style]="{
+      width: selectedNavItemWidth + 'px',
+      left: selectedNavItemLeft + 'px',
+    }"
+  >
+    <div class="glow-radial-core" [style.background]="selectedNavItem()?.color"></div>
+  </div>
+</nav>
