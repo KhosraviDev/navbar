@@ -119,8 +119,8 @@ header {
 
 .about-box {
   position: absolute;
-  bottom: -110px;
-  left: -11.9rem;
+  top: 3rem;
+  left: -12rem;
   display: none;
   flex-direction: column;
   gap: 1rem;
