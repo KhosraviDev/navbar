@@ -38,3 +38,15 @@ body {
   align-items: center;
   justify-content: center;
 }
+
+/* Setting an animation for dot pulse */
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+}

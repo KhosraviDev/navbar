@@ -16,8 +16,8 @@ export class App {
       id: 1,
       name: 'Home',
       description: 'Everything starts from here.',
-      color: '#84cc16',
-      colorRGB: '132, 204, 22',
+      color: '#38bdf8',
+      colorRGB: '56, 189, 248',
       className: 'bi bi-house'
     },
     {
@@ -32,8 +32,8 @@ export class App {
       id: 3,
       name: 'Search',
       description: 'Find what you are looking for.',
-      color: '#38bdf8',
-      colorRGB: '56, 189, 248',
+      color: '#84cc16',
+      colorRGB: '132, 204, 22',
       className: 'bi bi-search'
     },
     {
